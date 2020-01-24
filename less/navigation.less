@@ -13,10 +13,14 @@
         margin-top: 2%;
 
         a {
-            width: 100%;
+            .width();
             text-align: center;
             color: black;
-            text-decoration: none;          
+            text-decoration: none;   
+
+            &:hover{
+                color:@hover-color;
+              }// hover       
         }
     }//closes nav
     @media @phone {

@@ -15,10 +15,19 @@
     white-space: nowrap;
     text-decoration: none;
 
+    &:hover {
+        background-color: lightblue;
+        color: black;
+    }
+
     @media @phone {
-        width: 100%;
+        .width();
         padding: 5% 0%;
     }
+}
+
+.width() {
+    width: 100%;
 }
 
 @phone: ~"( max-width: 500px)";

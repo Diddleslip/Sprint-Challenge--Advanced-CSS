@@ -17,7 +17,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width();
 
     img {
       width: 28%;
@@ -32,7 +32,7 @@
 
       @media @phone {
         .blast {
-          width: 100%;
+          .width();
         }
       }
     }
@@ -74,7 +74,7 @@
         //Media query for this in mixins.less file
       }
       @media @phone {
-        width: 100%;
+        .width();
       }
     }//closes .walk-text
 
@@ -83,13 +83,13 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
+        .width();
         height: auto;
         margin-top: 2%;
         border-radius: 10px;
       }
       @media @phone {
-        width: 100%;
+        .width();
         margin: 2% 0%;
       }
     }//closes .walk-img
