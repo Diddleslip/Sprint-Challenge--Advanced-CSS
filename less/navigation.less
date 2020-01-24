@@ -1,1 +1,27 @@
 // Navigation code here
+
+.navDiv {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0%;
+
+    nav {
+        display: flex;
+        font-size: 1.5rem;
+        width: 45%;
+        margin-top: 2%;
+
+        a {
+            width: 100%;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+    }//closes nav
+    @media @mobile {
+        nav {
+            width: 80%;
+        }
+    }
+}//closes .navDiv

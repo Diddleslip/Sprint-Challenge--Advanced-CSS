@@ -1,1 +1,19 @@
 // Mixins Here
+
+.custom-btn(@bg-color:#FFBF27, @width:200px, @font-color:black){
+    display: block;
+    background-color: @bg-color;
+    margin: 5% 0%;
+    cursor: pointer;
+    text-align: center;
+    width: @width;
+    height: 10%;
+    padding: 1%; 
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    white-space: nowrap;
+}
+
+@mobile: ~"( max-width: 500px)";
+
