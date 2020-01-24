@@ -25,7 +25,18 @@
       border-radius: 20px;
       height: 100%;
     }
-  }
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+
+      @media @phone {
+        .blast {
+          width: 100%;
+        }
+      }
+    }
+  }//closes .space-images
 
   .visit-planets {
     padding: 15px;
@@ -40,7 +51,7 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 30px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
@@ -59,8 +70,13 @@
 
       .btn {
         .custom-btn(@bg-color: @btn-bg-color; @width: 30%; @font-color: white;)
+
+        //Media query for this in mixins.less file
       }
-    }
+      @media @phone {
+        width: 100%;
+      }
+    }//closes .walk-text
 
     .walk-img {
       width: 46%;
@@ -69,8 +85,17 @@
       img {
         width: 100%;
         height: auto;
+        margin-top: 2%;
         border-radius: 10px;
       }
+      @media @phone {
+        width: 100%;
+        margin: 2% 0%;
+      }
+    }//closes .walk-img
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 0% 5%;
     }
-  }
+  }//closes walk
 }// home
