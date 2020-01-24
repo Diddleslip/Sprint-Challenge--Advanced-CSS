@@ -227,6 +227,7 @@ p {
   border-radius: 10px;
   color: white;
   white-space: nowrap;
+  text-decoration: none;
 }
 @media ( max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -260,6 +261,9 @@ p {
     flex-direction: column-reverse;
     padding: 0% 5%;
   }
+}
+.direct-fill {
+  padding: 0% 5%;
 }
 .navDiv {
   display: flex;
@@ -298,4 +302,32 @@ footer {
   footer {
     color: #22283A;
   }
+}
+.form-cont {
+  font-size: 200%;
+  margin: 3% 0%;
+  padding: 0% 5%;
+}
+.form-cont input[type=text],
+.form-cont select,
+.form-cont textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form-cont input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-cont input[type=submit]:hover {
+  background-color: #45a049;
 }
