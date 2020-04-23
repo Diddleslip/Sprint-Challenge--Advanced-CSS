@@ -8,4 +8,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+
+  &:hover {
+    color: @hover-color;
+  }
+
+  @media @phone {
+    color: @btn-bg-color;
+  }
+}//closes footer

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
 
   <title>SpaceWalkers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -16,12 +17,23 @@
 
 <body>
 
- <!-- navigation code here -->
-
   <div class="container home">
 
+    <div class="navDiv">
+      <div>
+        <h2>SpaceWalkers</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
+
     <header class="intro">
-       <!-- image code here -->
+       <img src="/img/main-header.png" alt="Image of Earth view from outer space.">
 
       <h2>Lift Off</h2>
     
@@ -51,8 +63,8 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
-          Sign Up
+        <div>
+          <button class="btn" href=#FORMS>Sign Up</button>
         </div>
       </div>
       
@@ -61,6 +73,40 @@
       </div>
 
     </section>
+    
+    <div class="direct-fill">
+      <h3>Fill the form for your Monthly Magazine Subscriptions at no cost!*</h3>
+    </div>
+
+    <div class="form-cont" id="FORMS"> 
+
+      <form action="#">
+        
+        <label for="name">Full Name</label>
+          <input type="text" id="name" name="first-last-name" placeholder="Your full name..">
+    
+          <label for="email-name">E-mail</label>
+          <input type="text" id="email-name" name="email" placeholder="Your e-mail..">
+    
+          <label for="telephone-number">Telephone #</label>
+          <input type="text" id="telephone-number" name="telephone" placeholder="Your telephone number..">
+    
+          <label for="age">Age</label>
+          <select id="age" name="age">
+            <option value="select">Select your age</option>
+            <option value="eightteen">13-18</option>
+            <option value="thirty-five">19-35</option>
+            <option value="forty-nine">36-49</option>
+            <option value="fifty-up">50+</option>
+        </select>
+    
+        <label for="address">Adress</label>
+        <textarea id="address" name="address" placeholder="Write your address.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">  
+      </form>
+    
+      </div>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
